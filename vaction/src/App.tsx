@@ -1,7 +1,7 @@
 import './App.css'
 
-import  LoginPage from './componenet/verificationForm/LoginPage';
- './componenet/verificationForm/LoginPage'
+import  LoginPage from './componenet/loginPage/LoginPage';
+
 
 function App() {
  
