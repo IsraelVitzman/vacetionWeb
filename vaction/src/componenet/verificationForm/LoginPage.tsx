@@ -10,13 +10,11 @@ export function LoginPage() {
 
     const send = async () => {
         if (name.current?.value && password.current?.value) {
-
             const data = {
                 name: name.current?.value,
                 password: password.current?.value,
 
             }
-
             const servics = Servics("")
             const result = await servics.post("", data)
             setMessage(result)
