@@ -1,0 +1,84 @@
+/* Global Reset */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Arial', sans-serif;
+}
+
+/* מרכז את הטופס במסך */
+form {
+  max-width: 500px;
+  margin: 50px auto; /* רווח מלמעלה ומרכז אופקי */
+  padding: 30px;
+  background-color: #f8f8f8; /* צבע רקע עדין */
+  border-radius: 12px;
+  box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+  display: flex;
+  flex-direction: column;
+  gap: 15px; /* רווח בין השדות */
+}
+
+/* כותרת */
+form h2 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+/* שדות קלט וטקסט ארוך */
+form input[type="text"],
+form input[type="number"],
+form textarea,
+form input[type="file"] {
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  width: 100%;
+  font-size: 16px;
+}
+
+/* שדה הטקסט ארוך (textarea) */
+form textarea {
+  resize: vertical; /* מאפשר לשנות גובה */
+  min-height: 80px;
+}
+
+/* כפתור */
+form button {
+  padding: 12px;
+  background-color: #65a0ed;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+/* שינוי צבע כשעוברים עם העכבר */
+form button:hover {
+  background-color: #0466ac;
+}
+
+/* תצוגת תמונות (אם יש preview) */
+.preview-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 10px;
+  justify-content: center;
+}
+
+.preview-container img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+#imag{
+     width: 100px;
+     height: 100px;
+     margin-left: auto;
+}

@@ -1,0 +1,72 @@
+/* Global Reset */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Arial', sans-serif;
+}
+
+/* מרכז כל קומפוננטה */
+.container {
+  max-width: 500px;
+  margin: 50px auto;
+  padding: 30px;
+  background-color: #f8f8f8;
+  box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+/* רק ה-Create תהיה מוצללת */
+.shadowed {
+  box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+}
+
+/* כותרת */
+h2 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+/* שדות קלט */
+input[type="text"],
+input[type="number"],
+textarea,
+select,
+input[type="file"] {
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  width: 100%;
+  font-size: 16px;
+}
+
+/* textarea */
+textarea {
+  resize: vertical;
+  min-height: 80px;
+}
+
+/* כפתורים */
+button {
+  padding: 12px;
+  background-color: #65a0ed;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #0466ac;
+}
+#imag{
+     width: 100px;
+     height: 100px;
+     margin-left: auto;
+}

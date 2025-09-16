@@ -1,6 +1,9 @@
 import './App.css'
+import CreateAttraction from './componenet/crudAttraction/createAttraction'
 
-import  LoginPage from './componenet/loginPage/LoginPage';
+
+
+import UpdateAttraction from './componenet/crudAttraction/updateAttraction'
 
 
 function App() {
@@ -8,7 +11,9 @@ function App() {
 
   return (
     <>
-      <LoginPage/>
+      <CreateAttraction/>
+      <UpdateAttraction/>
+     
     </>
   )
 }
