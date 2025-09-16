@@ -25,7 +25,7 @@ export default function CreateAttraction() {
 
   const handleCreate = async() => {
       const crud =Servics('/resorts')
-      await crud.post('/createresort',formData)
+      await crud.post('/createattraction',formData)
   };
 
   return (

@@ -7,7 +7,7 @@ export default function DeleteAttraction() {
 
   const handleDelete =async () => {
     const crud =Servics('/resorts')
-    await crud.del('deleteresort')
+    await crud.del('deleteattraction')
     
   };
 

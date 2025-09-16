@@ -25,7 +25,7 @@ export default function UpdateAttraction() {
 
   const handleUpdate = async() => {
     const crud =Servics('/resorts')
-    await crud.put('/updateresort',formData)
+    await crud.put('/updateattraction',formData)
   };
 
   return (
