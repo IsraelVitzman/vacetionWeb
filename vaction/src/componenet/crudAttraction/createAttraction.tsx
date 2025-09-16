@@ -23,8 +23,7 @@ export default function CreateAttraction() {
   };
 
   const handleCreate = () => {
-    console.log("Create Attraction:", formData);
-    // שליחה לשרת
+      
   };
 
   return (

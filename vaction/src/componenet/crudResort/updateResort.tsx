@@ -1,6 +1,7 @@
 import logo from "../../assets/logoWev.png"
 import { useState } from "react";
-import "./crud.css"
+import "./crudResort.css"
+import { Servics } from "../../apiCLient/services";
 function UpdateVacation() {
   const [formData, setFormData] = useState({
     phone: "",
@@ -15,11 +16,12 @@ function UpdateVacation() {
     setFormData((prev) => ({ ...prev, [name]: value }));
   };
 
-  const handleUpdate = (e:any) => {
+  const handleUpdate = async(e:any) => {
     e.preventDefault();
 
    
-    console.log("מעדכן נופש:", formData);
+    const crud =Servics('/resorts')
+    await crud.put("/updateresort",formData) 
 
     setFormData({
       phone: "",

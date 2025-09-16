@@ -1,15 +1,16 @@
 import { useState } from "react";
-import "./crud.css"
+import "./crudResort.css"
 import logo from "../../assets/logoWev.png"
+import { Servics } from "../../apiCLient/services";
 function DeleteVacation() {
   const [phone, setPhone] = useState("");
 
-  const handleDelete = (e:any) => {
+  const handleDelete =async (e:any) => {
     e.preventDefault();
 
     
-    console.log("מוחק לפי טלפון:", phone);
-
+    const crud =Servics('/resorts')
+    await crud.del('deleteresort')
     setPhone(""); 
   };
 

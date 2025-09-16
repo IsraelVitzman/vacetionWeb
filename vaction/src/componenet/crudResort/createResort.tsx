@@ -1,6 +1,7 @@
 import  { useState } from "react";
-import "./crud.css"
+import "./crudResort.css"
 import logo from "../../assets/logoWev.png"
+import { Servics } from "../../apiCLient/services";
 const CreateVacation = () => {
   const [formData, setFormData] = useState({
     title: "",
@@ -29,11 +30,12 @@ const CreateVacation = () => {
     data.append("location", formData.location);
     data.append("beds", formData.beds);
 
-    // הוספת כל התמונות
+   
     for (let i = 0; i < formData.images.length; i++) {
       data.append("images", formData.images[i]);
     }
-
+    const crud =Servics('/resorts')
+    await crud.post('/addresort',data)
     
   };
 
