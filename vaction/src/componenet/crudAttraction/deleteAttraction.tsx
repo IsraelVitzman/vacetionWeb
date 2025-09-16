@@ -1,11 +1,13 @@
 import  { useState } from "react";
 import "./crudAttraction.css";
 import logo from "../../assets/logoWev.png"
+import { Servics } from "../../apiCLient/services";
 export default function DeleteAttraction() {
   const [phone, setPhone] = useState("");
 
-  const handleDelete = () => {
-    console.log("Delete Attraction by Phone:", phone);
+  const handleDelete =async () => {
+    const crud =Servics('/resorts')
+    await crud.del('deleteresort')
     
   };
 

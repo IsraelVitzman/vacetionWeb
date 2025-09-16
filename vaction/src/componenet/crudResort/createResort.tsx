@@ -55,7 +55,7 @@ const CreateVacation = () => {
       <br />
       <input type="file" name="images" onChange={handleChange} multiple required />
       <br />
-      <button type="submit">צור נופש</button>
+      <button onClick={handleSubmit}>צור נופש</button>
     </form>
   );
 };

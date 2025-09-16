@@ -26,7 +26,7 @@ function DeleteVacation() {
         onChange={(e) => setPhone(e.target.value)}
         required
       />
-      <button type="submit">מחק</button>
+      <button onClick={handleDelete}>מחק</button>
     </form>
   );
 }

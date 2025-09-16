@@ -71,7 +71,7 @@ function UpdateVacation() {
         value={formData.beds}
         onChange={handleChange}
       />
-      <button type="submit">עדכן</button>
+      <button onClick={handleUpdate}>עדכן</button>
     </form>
   );
 }

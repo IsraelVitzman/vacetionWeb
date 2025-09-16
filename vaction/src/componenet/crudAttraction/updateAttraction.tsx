@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import "./crudAttraction.css";
 import logo from "../../assets/logoWev.png"
+import { Servics } from "../../apiCLient/services";
 export default function UpdateAttraction() {
   const [formData, setFormData] = useState({
     name: "",
@@ -22,9 +23,9 @@ export default function UpdateAttraction() {
     }
   };
 
-  const handleUpdate = () => {
-    console.log("Update Attraction by Phone:", formData.phone, formData);
-    // שליחה לשרת לפי מספר טלפון
+  const handleUpdate = async() => {
+    const crud =Servics('/resorts')
+    await crud.put('/updateresort',formData)
   };
 
   return (

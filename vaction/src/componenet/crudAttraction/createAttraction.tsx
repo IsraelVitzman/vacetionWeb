@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import "./crudAttraction.css";
 import logo from "../../assets/logoWev.png"
+import { Servics } from "../../apiCLient/services";
 export default function CreateAttraction() {
   const [formData, setFormData] = useState({
     name: "",
@@ -22,8 +23,9 @@ export default function CreateAttraction() {
     }
   };
 
-  const handleCreate = () => {
-      
+  const handleCreate = async() => {
+      const crud =Servics('/resorts')
+      await crud.post('/createresort',formData)
   };
 
   return (
