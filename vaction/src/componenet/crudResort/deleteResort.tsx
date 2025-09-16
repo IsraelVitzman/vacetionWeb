@@ -10,7 +10,7 @@ function DeleteVacation() {
 
     
     const crud =Servics('/resorts')
-    await crud.del('deleteresort')
+    await crud.del('/deleteresort')
     setPhone(""); 
   };
 
